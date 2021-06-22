@@ -10,14 +10,13 @@
     font-size: 3.2rem;
   }
   
-  h1 {
-    line-height:1;
-  }
-  
+
   .title {
-    color:ffffff;
+    line-height:1.8;
+    color:#ffffff;
     font-size: 100%;
     text-decoration: underline;
+    background: rgb(9, 3, 88);
   }
   
   .container {
@@ -57,5 +56,5 @@
     background-color:#000000;
   }
   .title:hover{
-      color:white;
+      color:rgb(235, 170, 28);
   }
