@@ -8,6 +8,7 @@ let checkForDecimal = '';
 
 calcKeys.addEventListener('click', (event) => {
 
+	
 	const key = event.target;
 	const keyValue = key.textContent;
 	let inputDisplay = userInput.textContent;
@@ -38,7 +39,8 @@ calcKeys.addEventListener('click', (event) => {
 		}
 	}
 
-		if (type === 'operator' && previousKeyType !== 'operator'
+	
+	if (type === 'operator' && previousKeyType !== 'operator'
 		&& !isEqualsPressed && !inputDisplay.includes('Infinity')) {
 		checkForDecimal = '';
 		userInput.textContent = inputDisplay + ' ' + keyValue + ' ';
@@ -73,12 +75,13 @@ calcKeys.addEventListener('click', (event) => {
 
 	}
 
+	
 	if (type === 'equal') {
-    	
+    	// Perform a calculation
 	    isEqualsPressed = true;
 	    const finalResult = handleEquation(equation);
 	    
-	    if ( finalResult === 0) {
+	    if (finalResult || finalResult === 0) {
 	    	displayResult.textContent = (!Number.isInteger(finalResult)) ? finalResult.toFixed(2) : 
 	    								(finalResult.toString().length >= 16) ? finalResult.toExponential(2) : finalResult ;
 	    } else {
@@ -90,7 +93,7 @@ calcKeys.addEventListener('click', (event) => {
 	calculator.dataset.previousKeyType = type;
 })
 
-
+//Function to calculate result based on each operator
 function calculate(firstNumber, operator, secondNumber) {
 
 	firstNumber = Number(firstNumber);
