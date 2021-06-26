@@ -5,7 +5,7 @@ body{
 	font-family: 'Quicksand', 'Roboto', sans-serif;
 }
 .container-parent{
-    margin-top:80px;
+    margin-top:100px;
     padding:10px;
     display: flex;
     justify-content: center;
