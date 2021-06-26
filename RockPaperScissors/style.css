@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(27, 27, 27);
+    
+}
+h1{
+color: white;
+font-size: 60px;
+font-weight: 700;
+text-decoration: underline;
+text-align: center;
+}
+div {
+    position: fixed;
+    top: 40%;
+    left: 30%;
+  }
